@@ -298,10 +298,10 @@ void HAL_I2C_ErrorCallback(I2C_HandleTypeDef *hi2c)
 	printf("I2C Error occurred. Reinitializing...\r\n");
 
 	    HAL_I2C_DeInit(&hi2c1);
-	    HAL_Delay(10);  // 🔁 انتظر شوية قبل الإعادة
+	    HAL_Delay(10);  
 	    HAL_I2C_Init(&hi2c1);
 
-	    // إعادة ضبط الاستقبال بعد مهلة قصيرة
+	
 	    if (HAL_I2C_Slave_Receive_IT(&hi2c1, rx_buffer, sizeof(rx_buffer)) != HAL_OK)
 	    {
 	        printf("Failed to re-init Slave Receive\r\n");
