@@ -47,7 +47,7 @@ DMA_HandleTypeDef hdma_i2c1_tx;
 UART_HandleTypeDef huart2;
 
 /* USER CODE BEGIN PV */
-uint8_t rxBuffer[1];                     // حرف واحد فقط
+uint8_t rxBuffer[1];                     
 uint8_t txBuffer[1] = {'R'};
 /* USER CODE END PV */
 
