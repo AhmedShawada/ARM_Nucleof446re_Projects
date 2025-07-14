@@ -16,16 +16,11 @@ This repository contains a practical collection of embedded systems projects bui
 | `I2C_Slave_Servo`              | STM32 slave receiving I2C commands to control servo                    |
 | `I2C_Slave_ServoFT7135M`       | FT7135M servo control via STM32 I2C slave                              |
 | `I2C_Slave_Transmitter`        | STM32 slave sending data to I2C master                                 |
-| `Master_ExternalPullUp`        | I2C master with external pull-up resistors handling                    |
-| `Master_Request`               | Master initiating request–response protocol                           |
 | `PWM`                          | Generate PWM signals for LED or motor control                          |
-| `RCCF103`                      | RCC setup for STM32F103 (cross-reference test)                         |
 | `RCCNucleoF446`                | Clock configuration for STM32F446RE                                    |
 | `Servo`                        | Basic servo motor control via PWM                                      |
 | `Servo_PWM_FT7135M`            | Servo PWM using FT7135M motor controller                               |
 | `Slave_ExternalPullUp`         | I2C slave handling external pull-up resistors                          |
-| `Slave_Request`                | Slave responds to master-initiated data request                        |
-| `Test_I2C_With_Motion`         | Motion-based control using I2C communication                          |
 | `UltraSonic`                   | HC-SR04 ultrasonic sensor for distance measurement                     |
 
 ---
