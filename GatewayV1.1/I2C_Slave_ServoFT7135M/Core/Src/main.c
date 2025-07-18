@@ -352,7 +352,7 @@ void HAL_I2C_SlaveRxCpltCallback(I2C_HandleTypeDef *hi2c)
 {
 
 	Servo_Angle(received_angle);
-	HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5); // لو متوصل على LD2
+	HAL_GPIO_TogglePin(GPIOA, GPIO_PIN_5); 
 	// Send feedback via UART
 	char msg[50];
 	sprintf(msg, "Servo angle: %d\r\n", received_angle);
