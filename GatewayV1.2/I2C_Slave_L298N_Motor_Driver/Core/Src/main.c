@@ -550,26 +550,6 @@ void Motor_Rotate_To_Angle(int8_t target_angle)
     }
 }
 
-
-
-
-
-
-
-// ✅ تسلسل الحركات يشمل كل الزوايا المطلوبة
-/*void Execute_Angle_Sequence()
-{
-    int8_t sequence[] = {30, 0, -30, 0, -30, 30};
-    for (int i = 0; i < sizeof(sequence)/sizeof(sequence[0]); i++)
-    {
-        Motor_Rotate_To_Angle(sequence[i]);
-        char msg[50];
-        sprintf(msg, "✅ Now at: %d\r\n", sequence[i]);
-        HAL_UART_Transmit(&huart2, (uint8_t*)msg, strlen(msg), 100);
-        HAL_Delay(1200);
-    }
-}
-*/
 int8_t Get_Actual_Angle(void)
 {
     HAL_UART_Transmit(&huart2, (uint8_t *)"Reading ADC...\r\n", 17, 100);
